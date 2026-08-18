@@ -77,27 +77,33 @@
   <main>
     <article>
       <h1>Auralayer Privacy Policy</h1>
-      <p class="updated">Last updated: May 29, 2026</p>
+      <p class="updated">Last updated: August 19, 2026</p>
 
-      <p>Auralayer is designed to run locally on your device.</p>
+      <p>Auralayer is designed to keep your listening data on your device while using limited online services for the catalog and temporary entitlement checks.</p>
 
-      <h2>Data Collection</h2>
-      <p>Auralayer does not collect, sell, share, or transmit personal information.</p>
-      <p>The app does not require an account, does not include advertising SDKs, does not use analytics SDKs, and does not send usage data to a server.</p>
+      <h2>Information Collection and Use</h2>
+      <p>Auralayer does not require account creation and does not collect, sell, rent, or share personal information through the app.</p>
+      <p>The app does not include advertising SDKs, analytics SDKs, or crash-reporting SDKs. Auralayer does not currently use live Google Play Billing or other paid subscription services. Purchase and restore flows are not a live billing mechanism in the V2 beta.</p>
 
-      <h2>Local Data</h2>
-      <p>Auralayer stores your saved mixes, presets, selected sounds, music selection, and volume settings locally on your device so the app can restore your audio setup later.</p>
-      <p>This local app data is not transmitted by Auralayer.</p>
+      <h2>Remote Catalog and Network Services</h2>
+      <p>When online, Auralayer may connect over HTTPS to Auralayer services to retrieve the current sound, music, and session catalog and to create temporary media playback or download sessions. The catalog may include metadata such as titles, categories, availability, and content hashes. Remote catalog content is not required for bundled sounds to play offline.</p>
+      <p>For V2 beta entitlement checks, the app may generate and store an opaque, random app-specific device identifier and send it to the Auralayer Worker. This identifier is not derived from your Android ID, advertising ID, hardware serial number, email address, phone number, or other account identity. It is used to associate a temporary server-controlled beta entitlement with the app installation and to protect the service from abuse. Auralayer does not use it to identify you personally.</p>
+      <p>V2 beta Plus access, where enabled, is granted by the Auralayer Worker and includes an expiration time. The app may cache the entitlement locally for graceful operation, but access ends when the server-provided expiration time passes. V2 beta access is temporary and is not a permanent free subscription.</p>
+      <p>The app does not send raw purchase tokens to third parties as part of the V2 beta flow. If paid billing and purchase verification are introduced in a future release, this policy will be updated before those services are enabled.</p>
+
+      <h2>Local Data Storage</h2>
+      <p>Auralayer stores app data locally on your device so the app can function properly and restore your listening experience. This may include saved mixes, presets, selected sounds, music and session selections, playback preferences, volume settings, downloaded audio files, temporary catalog/media cache files, and the opaque app-specific device identifier described above.</p>
+      <p>Downloaded or bundled audio can be played from local storage when the app is offline. You can remove downloaded audio and temporary cached files through the app's storage controls where available. Clearing the app's storage or uninstalling the app removes locally stored app data, downloads, and caches.</p>
 
       <h2>Permissions</h2>
-      <p>Auralayer uses Android foreground media playback and notification permissions to keep ambient audio available while the app is in the background and to show playback controls in Android notifications or on the lock screen.</p>
-      <p>If you deny notification permission, audio playback can still work, but Android may hide notification playback controls.</p>
+      <p>Auralayer may use Android internet access to retrieve remote catalog and media data. It may also use Android media playback, foreground service, wake-lock, notification, and related system capabilities to support background audio playback and show playback controls in notifications or on the lock screen.</p>
+      <p>If notification access is denied, audio playback may still function, but notification-based playback controls may be limited or unavailable depending on Android system behavior.</p>
 
       <h2>Support Email</h2>
       <p>If you contact support by email, your email app may send your email address and message to Auralayer support. Support emails are used only to respond to your request.</p>
 
       <h2>Data Deletion</h2>
-      <p>Because Auralayer stores app data locally on your device, you can delete saved mixes and local app data by clearing the app's storage or uninstalling the app.</p>
+      <p>Because Auralayer stores most app data locally on your device, you can remove this data at any time by clearing the app's storage or uninstalling the app. Remote catalog and entitlement records associated with an opaque app-specific device identifier are retained only as needed to operate the catalog and V2 beta access services and are not a personal account profile. Contact support if you need help with a service-side data request.</p>
 
       <h2>Contact</h2>
       <p>For privacy questions, contact the app publisher at: <a href="mailto:auralayer.support@gmail.com">auralayer.support@gmail.com</a></p>
